@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .head {
+            background-color: #eeff00;
+            margin: 0px;
+            padding: 18px;
+            height: 8vh;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .text {
+            color: #4786b8;
+            font-size: 51px;
+        }
+
+            {
+            % block css %
+        }
+
+            {
+            % endblock %
+        }
+
+        .logo {
+            height: 10vh;
+            width: 10vw;
+        }
+
+        .img {
+            height: 10vh;
+            width: 10vw;
+        }
+
+        .heading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 29px;
+        }
+
+        .theory {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: ligh;
+            font-size: 14px;
+        }
+
+        .link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: ligh;
+            font-size: 14px;
+        }
+
+        .block {
+            margin-left: 10px;
+        }
+
+        .cred {
+            left: 0px;
+        }
+
+        .foot {
+            border: 2px solid black;
+            width: 100vw;
+            height: 20px;
+            background-color: antiquewhite;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    {% load static %}
+    <div class="head">
+        <div class="logo">
+            <svg class="img" width="200" height="200" viewBox="0 0 256 256">
+                <path fill="#3776AB"
+                    d="M128 0c-23 0-45 2-45 2-21 4-25 12-25 27v20h50v7H58c-15 0-28 9-32 26-5 20-5 32 0 53 4 16 13 26 28 26h18v-24c0-17 14-32 32-32h50c14 0 25-11 25-25V29c0-14-12-25-25-27 0 0-23-2-46-2zm-27 15c5 0 9 4 9 9s-4 9-9 9-9-4-9-9 4-9 9-9z" />
+                <path fill="#FFD43B"
+                    d="M128 256c23 0 45-2 45-2 21-4 25-12 25-27v-20h-50v-7h50c15 0 28-9 32-26 5-20 5-32 0-53-4-16-13-26-28-26h-18v24c0 17-14 32-32 32h-50c-14 0-25 11-25 25v51c0 14 12 25 25 27 0 0 23 2 46 2zm27-15c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9z" />
+            </svg>
+        </div>
+        <div class="text">PYTHON TUTORIAL</div>
+    </div>
+
+
+
+
+    <div class="block">
+        <div class="maintheory">
+            <div class="font heading">DATA TYPES</div><br>
+            <div class="font theory">
+                Data types in Python define the kind of value a variable can store and how that value can be used in a
+                program.
+                They help Python understand whether the data is a number, text, a collection of items, or a true/false
+                value.
+                Some common data types include int for integers, float for decimal numbers, str for text, and bool for
+                logical
+                values.
+                Python also supports advanced types like lists, tuples, dictionaries, and sets.
+                Using the correct data type makes programs more efficient and easier to understand.
+                Data types are one of the most fundamental concepts in Python programming.
+                Every variable in Python belongs to some data type.
+                Learning them is the first step toward writing strong Python code.
+            </div>
+            <div class="link">
+                <a href="http://127.0.0.1:8000/datatypes">Click Here To Study About Data Types</a><br>
+            </div>
+        </div>
+        <br>
+        <div class="maintheory">
+            <div class="font heading">OPERATORS</div><br>
+            <div class="font theory">
+                Operators are symbols used to perform operations on variables and values in Python.
+                They allow us to do tasks like addition, subtraction, comparison, and logical checks.
+                For example, + is used for addition, - for subtraction, and * for multiplication.
+                Comparison operators like ==, >, and < help in decision-making. Logical operators such as and, or, and
+                    not are used to combine conditions. Operators make code dynamic and useful for calculations and
+                    problem-solving. They are widely used in almost every Python program. Understanding operators is
+                    important for building logic in coding. </div>
+                    <div class="link">
+                        <a href="http://127.0.0.1:8000/operators">Click Here To Study About Different Operators</a><br>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <div class="maintheory">
+            <div class="font heading">CONDITIONAL STATEMENT</div><br>
+            <div class="font theory">
+                Conditional statements are used to control the flow of a program based on specific conditions.
+                They allow the program to make decisions and execute different blocks of code depending on whether a
+                condition is true or false.
+                This makes the program intelligent and interactive instead of executing every line in a fixed order.
+                Conditional statements are one of the most important concepts in programming because they help solve
+                real-world decision-making problems.
+                They are widely used in login systems, result checking, eligibility tests, calculators, and many other
+                applications.
+                Python mainly uses if, else, elif, and nested conditions to perform decision-making.</div>
+            <div class="link">
+                <a href="http://127.0.0.1:8000/con">Click Here To Study About Loops</a><br>
+            </div>
+        </div>
+        <br>
+        <div class="maintheory">
+            <div class="font heading">LOOPS</div><br>
+            <div class="font theory">
+                Loops are used to execute a block of code repeatedly without writing the same code again and again.
+                They help in reducing code repetition and make programs shorter, cleaner, and more efficient.
+                Whenever a task needs to be performed multiple times, loops are used.
+
+                For example, printing numbers, taking repeated input, traversing lists, and creating patterns are common
+                loop tasks.
+
+                Python mainly provides two types of loops:
+
+                while loop
+                for loop</div>
+            <div class="link">
+                <a href="http://127.0.0.1:8000/loop">Click Here To Study About Conditional Statements</a><br>
+            </div>
+        </div>
+        <br>
+        <div class="maintheory">
+            <div class="font heading">FUNCTIONS</div><br>
+            <div class="font theory">
+                A function is a reusable block of code that is created to perform a specific task.
+                Instead of writing the same code again and again, we can place that code inside a function and call it
+                whenever needed.
+                This helps in reducing code repetition and makes the program shorter, cleaner, and easier to manage.
+
+                Functions improve:
+
+                code reusability
+                readability
+                modularity
+                maintenance
+
+                In Python, functions are defined using the def keyword.
+                A function can take input values called arguments, process them, and optionally return an output value.
+
+                Functions are widely used in calculators, login systems, data processing, and almost every real-world
+                program.</div>
+            <div class="link">
+                <a href="http://127.0.0.1:8000/func">Click Here To Study About Conditional Statements</a><br>
+            </div>
+            <br>
+            <div class="maintheory">
+                <div class="font heading">RECURSION</div><br>
+                <div class="font theory">
+                    Recursion is a programming technique in which a function calls itself in order to solve a problem.
+                    Instead of solving the entire problem at once, the function breaks it into smaller versions of the
+                    same problem and keeps calling itself until a stopping condition is reached.
+                    This stopping condition is known as the base case.
+
+                    Every recursive function must have two important parts:
+
+                    Base Case → the condition where recursion stops
+                    Recursive Case → the part where the function calls itself again
+
+                    Without a base case, the function will keep calling itself forever, leading to an infinite recursion
+                    error.
+                    Recursion is commonly used in problems like factorial, Fibonacci series, tree traversal, and
+                    divide-and-conquer algorithms.</div>
+            </div>
+        </div>
+        <a href="http://127.0.0.1:8000/rec">Click Here To Study About Recursion</a><br><br>
+        <footer class="foot">
+            <div class="cred"><a class="link1" href="http://127.0.0.1:8000/cred">Read Something About Contributions</a>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

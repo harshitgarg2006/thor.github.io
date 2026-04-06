@@ -1,0 +1,30 @@
+{% extends "python/basic.html" %}
+{% block css %}
+.text1{
+font-size: 30px;
+} 
+.box{
+    display: flex;
+    gap: 20px;
+}
+
+{% endblock %}
+{% block body %}
+<pre class="codebox">
+    {{action5}}
+</pre>
+<div class="text1 font">{{action}}</div> <br>
+<form action="/{{action2}}{{action1}}result" method="get">
+
+    <div class="box">
+        <div class="one">
+            <div class="text">{{action3}}</div>
+            <textarea name="num1" class = "textarea"></textarea><br>
+        </div>
+        <div class="two">
+            <div class="text">{{action4}}</div>
+            <textarea name="num2" class = "textarea"></textarea><br>
+        </div>
+    </div>
+    <button class = "run" type="submit">Run Code</button>
+</form> {% endblock %}

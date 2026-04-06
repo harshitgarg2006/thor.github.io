@@ -1,0 +1,16 @@
+{% extends "python/basic.html" %}
+{% block css %}
+.text1{
+font-size: 30px;
+} 
+{% endblock %}
+{% block body %}
+<pre class="codebox">
+    {{action5}}
+</pre>
+<div class="text1 font">{{action}}</div> <br>
+<form action="/{{action2}}{{action1}}result" method="get">
+    <textarea name="keys" class= "textarea"></textarea><br>
+    <textarea name="values" class = "textarea"></textarea><br>
+    <button class = "run" type="submit">Run Code</button>
+</form> {% endblock %}

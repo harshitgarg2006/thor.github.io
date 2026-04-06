@@ -1,0 +1,140 @@
+{% extends "python/basic.html" %}
+    
+    
+{% block body %} 
+<div class="font heading">
+    1. Types Of Recursion
+</div><br>
+<pre class="font theory">
+Recursion is mainly of two types:
+
+Direct Recursion
+Indirect Recursion <br>
+</pre>
+<div class="font subheading">a) Direct Recursion</div><br>
+<pre class="font theory">
+Direct recursion occurs when a function calls itself directly inside its own body.
+
+This is the most common and simplest form of recursion.
+
+The flow is:
+
+function → same function → same function
+
+The function repeatedly calls itself with a smaller or modified input until the base case is reached.
+
+Most beginner recursion problems use direct recursion.
+
+Examples of use cases:
+
+factorial
+sum of natural numbers
+Fibonacci
+countdown problems</pre><br>
+
+<div class="font subheading">b) Indirect Recursion</div><br>
+<pre class="font theory">
+Indirect recursion occurs when one function calls another function, and that second function eventually calls the first one again.
+
+The flow is:
+
+function A → function B → function A
+
+So the recursion happens through multiple functions.
+
+This is also called mutual recursion.
+
+It is less common than direct recursion but is useful in advanced logic and algorithm design.
+
+Examples of use cases:
+
+even/odd checking
+parser logic
+mutually dependent conditions</pre><br>
+<div class="font heading">
+    2. Sub-Types Of Recursion
+</div><br>
+<pre class="font theory">
+These are mostly discussed under direct recursion.<br>
+</pre>
+<div class="font subheading">a) Tail Recursion</div><br>
+<pre class="font theory">
+Tail recursion is when the recursive call is the last statement of the function.
+
+That means after the recursive call, no further work is left.
+
+Flow:
+
+do work → recursive call → end
+
+This is considered memory-efficient in some languages.
+
+But important note for your website:
+
+Python does not optimize tail recursion, so it still uses stack memory like normal recursion.</pre><br>
+
+<div class="font subheading">b) Head Recursion</div><br>
+<pre class="font theory">
+Head recursion is when the recursive call happens before any processing work.
+
+Flow:
+
+recursive call → do work
+
+The function first keeps calling itself and performs work while returning back.
+
+This is often used in reverse-order outputs.</pre><br>
+<div class="font subheading">c) Tree Recursion</div><br>
+<pre class="font theory">
+This happens when a function calls itself more than one time in a single call.
+
+Flow:
+
+function
+   ↙   ↘
+ func   func
+
+This creates a tree-like structure of calls.
+
+Commonly used in:
+
+Fibonacci
+binary tree traversal
+divide and conquer</pre>
+<div class="heading">Some Example Codes</div><br>
+<div class="heading">Example-1</div><br>
+    <div class="theory">
+        Write A Program To Calculate Factorial Of A Given Number Using Direct Recursion<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/recex1">Click Here To See The Solution</a><br><br>
+    </div>
+    <div class="heading">Example-2</div><br>
+    <div class="theory">
+        Write A Program To Check If A Number Is Even Or Odd Using Indirect Recursion<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/recex2">Click Here To See The Solution</a><br><br>
+    </div>
+    <div class="heading">Example-3</div><br>
+    <div class="theory">
+        Write A Program To Print Numbers From n To 1 Using Tail Recursion<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/recex3">Click Here To See The Solution</a><br><br>
+    </div>
+    <div class="heading">Example-4</div><br>
+    <div class="theory">
+        Write A Program To Print Numbers From 1 To n Using Head Recursion<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/recex4">Click Here To See The Solution</a><br><br>
+    <div class="heading">Example-5</div><br>
+    <div class="theory">
+        Write A Program To Print n Number Of Fibonacci Series Given By The User Using Tree Recursion<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/recex5">Click Here To See The Solution</a><br><br>
+    </div>
+
+{% endblock %}

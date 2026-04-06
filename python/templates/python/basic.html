@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+
+        .head {
+            background-color: #eeff00;
+            margin: 0px;
+            padding: 18px;
+            height: 8vh;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main1 {
+            display: flex;
+            width: 100vw;
+        }
+
+        .text {
+            color: #4786b8;
+            font-size: 51px;
+        }
+
+        .logo {
+            height: 10vh;
+            width: 10vw;
+        }
+
+        .img {
+            height: 10vh;
+            width: 10vw;
+        }
+
+        .heading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 29px;
+        }
+
+        .subheading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .codebox{
+            height : 45vh;
+            width : 98vw;
+            background-color : black;
+            color : white;
+            overflow-y: auto;
+        }
+        .theory {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+
+        .link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: ligh;
+            font-size: 14px;
+        }
+
+        .block {
+            margin-left: 10px;
+        }
+
+        .drop {
+            width: 10vw;
+            height: 302px;
+            border: 3px solid black;
+            position: fixed;
+            top: -400px;
+            transition: 0.3s;
+            right: 0px;
+        }
+
+        .dropbox:hover {
+            cursor: pointer;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropbox {
+            height: 40px;
+            width: 10vw;
+            border: 2px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .ham {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: -1;
+        }
+
+        .cross {
+            position: fixed;
+            top: 0vh;
+            right: 0vw;
+            z-index: 2;
+            width: 0px;
+            transition: 0.3s;
+        }
+
+        .ham:hover {
+            cursor: pointer;
+        }
+
+        .cross:hover {
+            cursor: pointer;
+        }
+
+        .cred {
+            left: 0px;
+        }
+
+            
+            {% block css %}
+        
+
+            
+            {% endblock %}
+        
+        .foot{
+            border: 2px solid black;
+            width: 100vw;
+            height: 20px;
+            position: fixed;
+            bottom: 0px;
+            background-color: antiquewhite;
+        }
+
+        .run{
+            border-radius: 4px;
+            color: #3776ab;
+            background-color: #eeff00;
+            height: 5vh;
+            width: 22vw;
+            font-size: 24px;
+        }
+        .textarea{
+            width: 336px;
+            height: 58px;
+        }
+        .codebox{
+           font-size: 18px;
+        }
+        body{
+            background-color: beige
+        }
+    </style>
+</head>
+
+<body>
+    {% load static %}
+    <div class="head">
+        <div class="main1">
+            <div class="logo">
+                <svg class="img" width="200" height="200" viewBox="0 0 256 256">
+                    <path fill="#3776AB"
+                        d="M128 0c-23 0-45 2-45 2-21 4-25 12-25 27v20h50v7H58c-15 0-28 9-32 26-5 20-5 32 0 53 4 16 13 26 28 26h18v-24c0-17 14-32 32-32h50c14 0 25-11 25-25V29c0-14-12-25-25-27 0 0-23-2-46-2zm-27 15c5 0 9 4 9 9s-4 9-9 9-9-4-9-9 4-9 9-9z" />
+                    <path fill="#FFD43B"
+                        d="M128 256c23 0 45-2 45-2 21-4 25-12 25-27v-20h-50v-7h50c15 0 28-9 32-26 5-20 5-32 0-53-4-16-13-26-28-26h-18v24c0 17-14 32-32 32h-50c-14 0-25 11-25 25v51c0 14 12 25 25 27 0 0 23 2 46 2zm27-15c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9z" />
+                </svg>
+            </div>
+            <div class="text">PYTHON TUTORIAL</div>
+            <div class="cross">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor"
+                    fill="white">
+                    <path
+                        d="M17.4677 5.46966C17.7606 5.17678 18.2354 5.17677 18.5283 5.46966C18.8211 5.76255 18.8211 6.23733 18.5283 6.5302L13.0576 11.9999L18.5273 17.4696C18.8201 17.7625 18.8201 18.2373 18.5273 18.5302C18.2344 18.823 17.7596 18.823 17.4668 18.5302L11.997 13.0604L6.52921 18.5292C6.23635 18.8221 5.76156 18.822 5.46866 18.5292C5.17577 18.2363 5.17577 17.7615 5.46866 17.4687L10.9365 11.9999L5.46769 6.53118C5.17481 6.23831 5.17486 5.76353 5.46769 5.47063C5.76058 5.17776 6.23535 5.17775 6.52823 5.47063L11.997 10.9394L17.4677 5.46966Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+        </div>
+        <div class="drop">
+            <div class="ham"><img src="" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor"
+                    fill="none">
+                    <defs />
+                    <path fill="currentColor"
+                        d="M3.25,5 C3.25,4.586 3.586,4.25 4,4.25 L20,4.25 C20.414,4.25 20.75,4.586 20.75,5 C20.75,5.414 20.414,5.75 20,5.75 L4,5.75 C3.586,5.75 3.25,5.414 3.25,5 Z M3.25,12 C3.25,11.586 3.586,11.25 4,11.25 L20,11.25 C20.414,11.25 20.75,11.586 20.75,12 C20.75,12.414 20.414,12.75 20,12.75 L4,12.75 C3.586,12.75 3.25,12.414 3.25,12 Z M4,18.25 L20,18.25 C20.414,18.25 20.75,18.586 20.75,19 C20.75,19.414 20.414,19.75 20,19.75 L4,19.75 C3.586,19.75 3.25,19.414 3.25,19 C3.25,18.586 3.586,18.25 4,18.25 Z" />
+                </svg>
+
+
+            </div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/python">HOME</a></div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/datatypes">Data Types</a></div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/operators">Operators</a><br></div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/con">Conditional Statements</a><br></div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/loop">Loops</a><br></div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/func">Functions</a><br></div>
+            <div class="dropbox"><a class="link1" href="http://127.0.0.1:8000/rec">Recursion</a><br></div>
+
+        </div>
+    </div>
+
+    <div class="block">{% block body %} {% endblock %}</div><br><br><br>
+    <footer class="foot">
+        <div class="cred"><a class="link1" href="http://127.0.0.1:8000/cred">Read Something About Contributions</a>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    document.querySelector(".ham").addEventListener("click", () => {
+        document.querySelector(".drop").style.top = "0px"
+        document.querySelector(".cross").style.width = "20px"
+    })
+    document.querySelector(".cross").addEventListener("click", () => {
+        document.querySelector(".drop").style.top = "-400px"
+        document.querySelector(".cross").style.width = "0px"
+    })
+
+</script>
+
+
+</html>

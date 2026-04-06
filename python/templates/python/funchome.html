@@ -1,0 +1,192 @@
+{% extends "python/basic.html" %}
+    
+    
+{% block body %} 
+<div class="font heading">
+    1. Parts Of A Function
+</div>
+<pre class="font theory">
+A function mainly consists of:
+
+function name → the name used to call it
+parameters → values accepted as input
+function body → the logic inside the function
+return statement → sends result back
+
+This structure helps in organizing the code into smaller manageable units. <br>
+</pre>
+<div class="font heading">
+    2. Arguments In Functions
+</div>
+<pre class="font theory">
+Arguments are the values passed to a function during function call.
+They act as the input for the function.
+
+Python supports different types of arguments:
+
+positional arguments
+keyword arguments
+default arguments
+variable length arguments <br>
+</pre>
+<div class="font subheading">a) Positional Arguments</div><br>
+<pre class="font theory">
+In positional arguments, values are assigned according to their position.
+
+The first value goes to the first parameter, the second to the second parameter, and so on.
+
+Here, order is very important.
+
+If the order changes, the result may also change.
+
+This type is used when the sequence of inputs matters.</pre><br>
+
+<div class="font subheading">b) Keyword Arguments</div><br>
+<pre class="font theory">
+In keyword arguments, values are passed using the parameter names.
+
+Here, order does not matter because Python matches the values by their names.
+
+This makes the code more readable and easier to understand.
+
+It is especially useful when a function has many parameters.</pre><br>
+
+<div class="font subheading">c) Positional-Only Arguments (/)</div><br>
+<pre class="font theory">
+Python allows some parameters to be positional only.
+
+This is done using / in the parameter list.
+
+All parameters before / must be passed only by position.
+
+Their names cannot be used while calling the function.
+
+This is useful when we want strict positional input.</pre><br>
+
+<div class="font subheading">d) Keyword-Only Arguments (*)</div><br>
+<pre class="font theory">
+Arguments after * are called keyword-only arguments.
+
+These must be passed using their parameter names.
+
+This improves code clarity and avoids confusion in large functions.</pre><br>
+
+<div class="font subheading">e) Variable Length Arguments (*args)</div><br>
+<pre class="font theory">
+Sometimes we do not know how many inputs a function will receive.
+
+For this, Python uses *args.
+
+It collects multiple positional arguments into a tuple.
+
+This gives flexibility to accept many values.
+
+Used in:
+
+sum of numbers
+dynamic input functions
+multiple data processing</pre><br>
+
+<div class="font subheading">f) Dictionary Arguments (**kwargs)</div><br>
+<pre class="font theory">
+When multiple named arguments need to be passed and the number is not fixed, Python uses **kwargs.
+
+It collects all keyword arguments into a dictionary.
+
+Here:
+
+parameter names become keys
+passed values become values
+
+This is useful for flexible named inputs.
+
+Used in:
+
+profile data
+settings
+forms
+configuration functions</pre><br>
+<div class="font heading">
+    3. Packing
+</div>
+<pre class="font theory">
+Packing means collecting multiple values into one variable.
+
+Examples:
+
+*args → packs into tuple
+**kwargs → packs into dictionary <br>
+</pre>
+<div class="font heading">
+    4. Unpacking
+</div>
+<pre class="font theory">
+Unpacking means breaking one collection into separate values.
+
+Python uses:
+
+* for list/tuple unpacking
+** for dictionary unpacking
+
+This is commonly used while passing list or dictionary data to functions.<br>
+</pre>
+<div class="font heading">
+    5. Composite Function
+</div>
+<pre class="font theory">
+A composite function means one function uses another function inside it.
+
+In simple words, the output of one function becomes the input of another function.
+
+This is called function composition.
+
+Flow:
+
+Function A → result → Function B
+
+This helps in breaking complex tasks into smaller functions.
+
+For example:
+
+one function calculates marks
+another function calculates percentage using that result
+
+Composite functions improve modularity and code organization.<br>
+</pre>
+<div class="heading">Some Example Codes</div><br>
+<div class="heading">Example-1</div><br>
+    <div class="theory">
+        Write A Program To Make A Function To Calculate Area Of A Rectangle With Given Length And Breadth<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/funcex1">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-2</div><br>
+    <div class="theory">
+        Write A Program To Make A Function To Take Details From User And Give Any Kind Of Info<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/funcex2">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-3</div><br>
+    <div class="theory">
+        Write A Program To Make A Function To Calculate The Sum Of Numbers In A List Given By The User<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/funcex3">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-4</div><br>
+    <div class="theory">
+        Write A Program To Make A Function To Give Maximum Of Three Numbers In A List Given By The User<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/funcex4">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-5</div><br>
+    <div class="theory">
+        Write A Program To Make A Function To Calculate The Simple Interest For 5 Years With Pricipal Value And Rate Given By The User<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/funcex5">Click Here To See The Solution</a><br><br>
+    </div>
+{% endblock %}

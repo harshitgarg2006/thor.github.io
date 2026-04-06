@@ -1,0 +1,84 @@
+{% extends "python/basic.html" %}
+    
+    
+{% block body %}
+    <div class="heading">1. If Statement </div><br>
+    <pre class="theory">
+The if statement is the most basic conditional statement in Python.
+It is used to check whether a given condition is true.
+If the condition evaluates to true, the block of code inside the if statement gets executed.
+If the condition is false, Python simply skips that block and moves to the next statement.
+The if statement is used when a specific action should happen only under a certain condition.
+It forms the base of all conditional logic in Python.
+    </pre>
+    <div class="heading">2. Else Statement </div><br>
+    <pre class="theory">
+The else statement is used along with the if statement.
+It defines the block of code that should execute when the condition in the if statement is false.
+This ensures that one of the two possible paths is always executed.
+The else block does not require its own condition because it automatically handles all cases where the if condition fails.
+It is useful when there are only two possible outcomes in a decision-making process.
+    </pre>
+    <div class="heading">3. Elif Statement </div><br>
+    <pre class="theory">
+The elif statement stands for else if.
+It is used when multiple conditions need to be checked one after another.
+Python first checks the if condition, and if it is false, it moves to the elif condition.
+There can be multiple elif statements in a single conditional structure.
+As soon as one condition becomes true, its corresponding block is executed and the remaining conditions are skipped.
+This is useful when a program has several possible choices or outputs.
+    </pre>
+    <div class="heading">4. Nested Conditional Statement </div><br>
+    <pre class="theory">
+A nested conditional statement means placing one conditional statement inside another.
+This can be an if inside another if, or inside else or elif blocks.
+Nested conditions are used when a decision depends on another decision.
+They help in handling more complex logic where multiple levels of checking are required.
+For example, a program may first check one condition and then, based on that result, check another condition.
+Nested conditionals make programs more powerful but should be used carefully to keep code readable.
+    </pre>
+    <div class="heading">5. Infinite Loop </div><br>
+    <pre class="theory">
+An infinite loop is a loop that continues to run forever because its stopping condition never becomes false.
+This usually happens when the condition in a loop always remains true or when the variable controlling the loop is not updated properly.
+Infinite loops are commonly associated with while loops, but they can occur in other looping structures as well.
+While unintentional infinite loops can cause programs to freeze or consume system resources, intentional infinite loops are sometimes used in applications like game engines, servers, and continuous monitoring systems.
+Proper control conditions are important to avoid unwanted infinite execution.
+    </pre>
+<div class="heading">Some Example Codes</div><br>
+<div class="heading">Example-1</div><br>
+    <div class="theory">
+        Write A Program To Check If Someone Is Eligible For Driving License Or Not(Eligible Age Is 18 And Above)<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/conex1">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-2</div><br>
+    <div class="theory">
+        Write A Program To Check If Someone Is Eligible For Paying Tax Or Not(Eligible Yearly Income Is 12 Lakhs Per Annum Or Above)<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/conex2">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-3</div><br>
+    <div class="theory">
+        Write A Program To Check If Someone Is Eligible For Discount Or Not(Bill Of 2 Thousand And Above Is Eligible)<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/conex3">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-4</div><br>
+    <div class="theory">
+        Wite A Program To Differentisate People on The Basis Of Height(Do Whatever You Want)<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/conex4">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-5</div><br>
+    <div class="theory">
+        Write A Program To Check If Someone Is Getting A College Or Not(Do Whatever You Want)<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/conex5">Click Here To See The Solution</a><br><br>
+    </div>
+{% endblock %}

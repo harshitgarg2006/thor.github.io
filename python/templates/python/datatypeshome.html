@@ -1,0 +1,198 @@
+{% extends "python/basic.html" %}
+
+
+{% block body %}
+<div class="maintheory">
+    <div class="font heading">
+        1. Numeric Data Types in Python
+    </div>
+    <pre class="font theory">
+Numeric data types are used to store number-based values in Python.
+These are mainly used for calculations, measurements, counters, mathematical formulas, and scientific computations.
+Python provides three main numeric types:
+    
+Integer
+Floating Point
+Complex
+
+</pre>
+    <div class="font subheading">a) Integers</div><br>
+    <pre class="font theory">
+An integer is used to store whole numbers.
+These numbers do not contain any decimal value.
+Examples:
+x = 10
+y = -25
+z = 0
+Integers can be:  
+positive
+negative
+zero
+They are mostly used in:
+counting
+indexing
+calculations
+loops
+Example:
+age = 18
+marks = 95
+Python integers support arithmetic operations like +, -, *, /, %.
+        </pre>
+<div class="font subheading">b) Float</div><br>
+    <pre class="font theory">
+Float stores decimal numbers / floating point values.
+A float always contains a decimal point.
+Even though it looks like a whole number, because of the decimal it is a float.
+Used in:
+
+Percentage
+Marks Average
+Measurements
+Money Vakues
+Scientific Calculations
+
+Floats are generally stored using double precision. <br>
+    </pre>
+</div>
+<div class="font subheading">c) Complex</div><br>
+    <pre class="font theory">
+Complex numbers are used for advanced mathematics and engineering.
+They are written in the form:
+
+a + bj
+
+Where:
+
+a = real part
+b = imaginary part
+j = square root of -1 <br>
+    </pre>
+</div>
+<div class="font heading">2. Boolean</div><br>
+    <pre class="font theory">
+Boolean stores only two values:
+
+True
+False
+
+It is mainly used in:
+
+conditions
+loops
+comparisons
+logical statements
+
+Boolean is extremely important for if, while, and comparisons. <br>
+    </pre>
+</div>
+<div class="font heading">3. Dictionary</div><br>
+    <pre class="font theory">
+Dictionary stores data in key-value pairs.
+
+Example:
+
+student = {
+    "name": "Harshit",
+    "age": 18
+}
+
+Here:
+
+name → key
+Harshit → value
+
+Dictionaries are mutable.
+
+Very useful for storing structured data.
+<a href="http://127.0.0.1:8000/dictionary">Click Here To Study Methods Of Dictionary</a><br>
+    </pre>
+</div>
+<div class="font heading">4. Set</div><br>
+    <pre class="font theory">
+Set stores unique values only.
+
+Example:
+
+s = {1, 2, 3, 3}
+
+Output:
+
+{1, 2, 3}
+
+Duplicate values are removed automatically.
+
+Sets are unordered.
+
+Useful for unique items and mathematical operations.
+<a href="http://127.0.0.1:8000/sets">Click Here To Study Methods Of Set</a><br>
+    </pre>
+</div>
+ <div class="font heading">
+        5. Sequence
+    </div>
+    <pre class="font theory">
+Sequence means ordered collection of values.
+
+Python sequence types include:
+
+string
+list
+tuple
+
+These store multiple values in order.</pre><br>
+    <div class="font subheading">a) List</div><br>
+    <pre class="font theory">
+List stores multiple values in ordered form.
+
+Example:
+
+nums = [1, 2, 3, 4]
+
+Lists are mutable, meaning values can be changed.
+
+Example:
+
+nums[0] = 100
+
+List can store mixed types:
+
+data = [10, "python", True]
+<a href="http://127.0.0.1:8000/list">Click Here To Study Methods Of Lists</a></pre><br>
+<div class="font heading">b) Tuple</div><br>
+    <pre class="font theory">
+Tuple is similar to list but immutable.
+
+Example:
+
+point = (10, 20)
+
+Once created, values cannot be changed.
+
+Used when data should remain fixed.
+
+Example:
+
+days = ("Mon", "Tue", "Wed")
+<a href="http://127.0.0.1:8000/tuples">Click Here To Study Methods Of Tuples</a></pre><br>
+</div>
+<div class="font subheading">c) String</div><br>
+    <pre class="font theory">
+String is used to store text / characters.
+
+Example:
+
+name = "Harshit"
+
+Strings are written inside:
+
+single quotes ' '
+double quotes " "
+
+Example:
+
+city = "Moga"
+
+Strings are immutable, meaning once created, characters cannot be changed directly.
+<a href="http://127.0.0.1:8000/strings">Click Here To Study Methods Of Strings</a></pre>
+</div>
+{% endblock %}

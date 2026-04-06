@@ -1,0 +1,135 @@
+{% extends "python/basic.html" %}
+    
+    
+{% block body %} 
+<div class="maintheory">
+    <div class="heading">1. While Loop </div><br>
+    <pre class="theory">
+A while loop runs as long as a given condition remains true.
+
+This means Python first checks the condition:
+
+if true → loop runs
+if false → loop stops
+
+The condition is checked before every iteration.
+
+This loop is best used when the number of repetitions is not known in advance.
+
+Examples of where it is useful:
+
+keep asking for password until correct
+keep taking input until user enters 0
+game loop
+menu-driven programs
+    </pre>
+
+    <div class="maintheory">
+    <div class="heading">2. Nested While Loop </div><br>
+    <pre class="theory">
+A nested while loop means a while loop inside another while loop.
+
+The outer loop runs first.
+
+For every single iteration of the outer loop, the inner loop runs completely.
+
+This is mainly used in:
+
+matrix problems
+tables
+pattern printing
+coordinate-based problems
+    </pre>
+    <div class="heading">3. Range Function</div><br>
+    <pre class="theory">
+The range() function is mainly used with for loops.
+
+It generates a sequence of numbers.
+
+Syntax:
+
+range(start, stop, step)
+
+Where:
+
+start → starting value
+stop → ending limit (not included)
+step → increment / decrement
+    </pre>
+    <div class="heading">4. For Loop</div><br>
+    <pre class="theory">
+A for loop is used to iterate over a sequence or range.
+
+This loop is best when the number of iterations is known.
+
+It automatically handles the loop variable and movement.
+
+It is simpler than while for fixed repetitions.
+
+Used for:
+
+counting
+list traversal
+string traversal
+patterns
+tables
+    </pre>
+    <div class="heading">5. Nested For Loop</div><br>
+    <pre class="theory">
+A for loop inside another for loop.
+
+The inner loop runs fully for each outer loop iteration.
+
+This is extremely important in:
+
+pattern printing
+2D arrays
+matrix traversal
+multiplication tables
+combinations
+    </pre>
+        <div class="heading">6. Infinite Loop </div><br>
+    <pre class="theory">
+An infinite loop is a loop that continues to run forever because its stopping condition never becomes false.
+This usually happens when the condition in a loop always remains true or when the variable controlling the loop is not updated properly.
+Infinite loops are commonly associated with while loops, but they can occur in other looping structures as well.
+While unintentional infinite loops can cause programs to freeze or consume system resources, intentional infinite loops are sometimes used in applications like game engines, servers, and continuous monitoring systems.
+Proper control conditions are important to avoid unwanted infinite execution.
+    </pre>
+    <div class="heading">Some Example Codes</div><br>
+<div class="heading">Example-1</div><br>
+    <div class="theory">
+        Write A Program To Print Table Of A Given Number<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/loopex1">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-2</div><br>
+    <div class="theory">
+        Write A Program To Print Star Pattern With Given Number Of Rows And Columns<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/loopex2">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-3</div><br>
+    <div class="theory">
+        Write A Program To Print Sum Of First Given n Numbers<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/loopex3">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-4</div><br>
+    <div class="theory">
+        Write A Program To Print Pyramid Of A Given Number<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/loopex4">Click Here To See The Solution</a><br><br>
+    </div>
+<div class="heading">Example-5</div><br>
+    <div class="theory">
+        Write A Program To Print Number Of Digits In A Given Number<br><br>
+    </div>
+    <div class="link">
+        <a href="http://127.0.0.1:8000/loopex5">Click Here To See The Solution</a><br><br>
+    </div>
+{% endblock %}
